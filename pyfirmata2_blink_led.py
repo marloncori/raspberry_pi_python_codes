@@ -3,7 +3,7 @@ from timeit import default_timer as timer
 
 #with INDIRECT method
 if __name__ == '__main__':
-    arduino = pyfirmata2.Arduino('MY PORT HERE')
+    arduino = pyfirmata2.Arduino('/dev/ttyAMA0')
     print("Communication has successfully started")
     arduino.samplingOn()
     
