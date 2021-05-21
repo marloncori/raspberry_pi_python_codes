@@ -15,7 +15,7 @@ if __name__ == '__main__':
         while True:
             timeNow = timer()
             duration = timeNow - start
-            if duration >= interval
+            if duration >= interval:
                 LED.write(1)
                 print("LED is bliking!")
                 start = timer()
