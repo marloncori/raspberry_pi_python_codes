@@ -1,5 +1,5 @@
 import pyfirmata2
-from time import sleep
+from timeit import default_timer as timer
 
 #with INDIRECT method
 if __name__ == '__main__':
