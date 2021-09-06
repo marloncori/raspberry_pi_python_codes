@@ -1,0 +1,2 @@
+lower_blue = np.array([25,50,50])
+upper_blue = np.array([32,255,255])
