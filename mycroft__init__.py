@@ -10,12 +10,12 @@ class MyRobot(MycroftSkill):
     self.base_url = self.settings.get("base_url")
    
   @intent_handler(IntentBuilder("")
-                 .require("robot")
+                 .require("Robot")
                  .require("test"))
   def handle_test(self, msg):
     try:
       requests.post(self.base_url + "/run/test")
-      self.speak_dialog('robot')
+      self.speak_dialog('Robot')
       self.speak_dialog('test')
     except:
       self.speak_dialog("UnableToReach")
