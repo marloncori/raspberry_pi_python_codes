@@ -1,10 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 import sys
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
+  #return render_template('index.html')
   return "\n\033[1;35m======================\033[0m\n \033[1;34mHello, Flask!\n This is a simple server.\n\tEnjoy it :D\n\033[0m"
 
 @app.route('/robot')
