@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
   return "\n\033[1;35m======================\033[0m\n \033[1;34mHello, Flask!\n This is a simple server.\n\tEnjoy it :D\n\033[0m"
 
+@app.route('/robot')
+def robot():
+  return "\t The robot is moving forward!\n"
+
 if __name__ == '__main__':
   try:
     app.run(debug=True, host='0.0.0.0')
