@@ -1,9 +1,9 @@
 from time import sleep
 
-msg = "\033[1;32m\t This is the first test file.\033[0m"
+space = "\t"
+msg = "Test."
 
-while True:
-  print("=" * 29)
-  print(msg)
-  print("=" * 29)
-  sleep(1)
+for i in range(0, len(msg)):
+    print(msg)
+    msg = space + msg
+    sleep(1)
